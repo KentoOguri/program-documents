@@ -8,22 +8,13 @@
   - ❌ `/getUser`, `/createProduct`, `/deleteOrder`
 
 ### HTTPメソッドの適切な使用
-- `GET`: リソースの取得（冪等性あり）
+- `GET`: リソースの取得
 - `POST`: リソースの新規作成
-- `PUT`: リソースの完全な更新（冪等性あり）
+- `PUT`: リソースの完全な更新
 - `PATCH`: リソースの部分的な更新
-- `DELETE`: リソースの削除（冪等性あり）
+- `DELETE`: リソースの削除
 
 ## 2. API URLの設計
-
-### バージョニング戦略
-
-#### URLパスでのバージョニング（推奨）
-```
-https://api.example.com/v1/users
-https://api.example.com/v2/users
-```
-
 ### 基本的なリソース操作
 ```
 # ユーザー管理
